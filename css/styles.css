@@ -49,6 +49,13 @@ h4{
 .d-block{
     display: block !important;
 }
+.contenido-centrado{
+    max-width: 80rem;
+}
+.enlace-titulo{
+    text-decoration: none;
+    color: #000000;
+}
 /*botones*/
 .boton{
  color: #ffffff;
@@ -157,6 +164,8 @@ font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    max-width: 50rem;
+    flex: 1;
     
 }
 .iconos-caracteristicas li{
@@ -281,3 +290,10 @@ font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 3rem 0 ;
 }
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
