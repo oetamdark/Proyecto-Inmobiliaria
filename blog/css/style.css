@@ -27,17 +27,19 @@ h1{
 
 h2{
     font-size: 4rem;
-    line-height: 1.2;
+    line-height: 1.4;
 
 }
 
 h3{
     font-size: 3.2rem;
+    line-height: 1.4;
 
 }
 
 h4{
     font-size: 2.8rem;
+    line-height: 1.4;
 
 }
 img{
@@ -90,7 +92,7 @@ img{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60rem;
+    height: 100vh;
 }
 .site-header a{
     color: #fff;
@@ -124,18 +126,39 @@ img{
         margin: 0;
     }
 }
+
+
 .texto-header{
     color: #fff;
     text-align: center;
     margin-top: 5rem;
 }
+
 @media (min-width: 768px){
     .texto-header{
         margin-top: 15rem;
     } 
 }
-.texto-header p{
+.texto-header p {
     font-size: 2.2rem;
+    margin-top: 2rem;
+}
+@media (min-width: 768px){
+     .texto-header p{
+         margin-bottom: 0;
+     }
+}
+.texto-header .texto-fondo{
+    margin-bottom: 5rem;
+}
+.deslizar .up {
+    
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.deslizar img{
+    height: 8rem;
 }
 /*Contenido Principal home*/
 .contenido-principal{
@@ -149,6 +172,7 @@ img{
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 100%; */
+    text-align: center;
 }
 .cursos{
 order: -1;
@@ -159,11 +183,12 @@ order: -1;
          justify-content: space-between;
      }
      .blog{
-        flex-basis: 66.6%;
+        flex-basis: 63%;
      }
      .cursos{
         flex-basis: calc(33.3% - 4rem);
         order: 2;
+        text-align: center;
      }
 }
 
