@@ -17,7 +17,7 @@ img{
     max-width: 100%;
 }
 .contenedor{
-    width: 95;
+    width: 95%;
     max-width: 120rem;
     margin: 0 auto;
 
@@ -175,10 +175,16 @@ font-size: 2.2rem;
      text-align: center;
 }
 .contenedor-anuncios{
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     flex-wrap: wrap;
     
+}
+@media (min-width: 768px){
+    .contenedor-anuncios{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
 }
 .anuncio{
     flex: 0 0 calc(33.3% - 1rem);
@@ -238,8 +244,14 @@ font-size: 2.2rem;
 
 /*seccion inferior*/
 .seccion-inferior {
-    display: flex;
-    justify-content: space-between;
+
+}
+@media (min-width: 768px){
+    .seccion-inferior {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
 .seccion-inferior .blog{
  flex-basis: 60%;
@@ -249,9 +261,15 @@ font-size: 2.2rem;
     flex-basis: calc(40% - 2rem);
 }
 .entrada-blog{
-    display: flex;
-    justify-content: space-between;
+
     margin-bottom: 2rem;
+}
+@media (min-width: 768px){
+    .entrada-blog{
+        display: flex;
+        justify-content: space-between;
+
+    }
 }
 .entrada-blog:last-of-type{
     margin-bottom: 0;
@@ -263,6 +281,7 @@ font-size: 2.2rem;
     flex-basis: calc(60% - 3rem);
 }
 .texto-entrada h4{
+    text-align: center;
     margin: 0;
     line-height: 1.4;
 }
@@ -272,21 +291,31 @@ font-size: 2.2rem;
     width: 15rem;
     height: .5rem;
     background-color: #71B100;
+    margin: 0  auto;
     margin-top: 1rem;
 }
 .texto-entrada span{
     color: #e08709;
     font-style: italic;
 }
+@media (min-width: 768px){
+    .texto-entrada h4{
+        margin: 0;
+        line-height: 1.4;
+        text-align: left;
+    }
+    .texto-entrada h4::after{
+        margin: 1rem 0 0;
+    }
+}
 .testimonial {
     background-color: #71B100;
-    font-size:2.4rem ;
     padding: 2rem;
     color: #ffffff;
     border-radius: 2rem;
 }
 .testimonial p {
-    text-align: right;
+    text-align: center;
 }
 .testimonial blockquote::before{
     content:'';
@@ -294,13 +323,31 @@ font-size: 2.2rem;
     width: 4rem;
     height: 4rem;
     position: absolute;
-    left: -2rem;
+    left: 2rem;
 }
 .testimonial blockquote{
-    position: relative;
-    padding-left: 5rem;
-    font-weight: 300;
-
+    text-align: center;
+}
+@media (min-width: 768px){
+    .testimonial {
+        font-size:2.4rem ;
+        
+    }
+    .testimonial p {
+        text-align: right;
+    }
+    .testimonial blockquote::before{
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        left: -2rem;
+    }
+    .testimonial blockquote{
+        position: relative;
+        padding-left: 5rem;
+        font-weight: 300;
+    
+    }
 }
 .site-footer{
     background-color: #333333;
@@ -308,8 +355,14 @@ font-size: 2.2rem;
 }
 .contenedor-footer{
     padding: 3rem 0;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+
+}
+@media (min-width: 768px){
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .copy{
     margin: 0;
@@ -320,7 +373,6 @@ font-size: 2.2rem;
 
 .contenido-nosotros{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 3rem;
 }
 
@@ -329,6 +381,16 @@ font-size: 2.2rem;
     font-size: 2rem;
     margin: 0;
     padding: 3rem 0 ;
+    text-align: center;
+}
+@media (min-width: 768px){
+     .contenido-nosotros{
+         
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .texto-nosotros blockquote{
+        text-align: left;
+     }
 }
 .resumen-propiedad{
     display: flex;
