@@ -15,6 +15,7 @@ background: -moz-linear-gradient(top, #e570e7 0%, #2989d8 50%, #207cca 51%, #7db
 background: -webkit-linear-gradient(top, #e570e7 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #e570e7 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+background-attachment: fixed;
 font-family: Arial, Helvetica, sans-serif;
 color: #ffffff;
 }
@@ -38,7 +39,7 @@ img{
  }
 
  .lista-productos{
-     margin-top: 40px;
+     margin-top: 20px;
      padding:0;
      list-style: none;
  }
@@ -46,9 +47,50 @@ img{
      float: left;
      width: 50%;
      padding: 20px;
+     text-align: center;
+ }
+ .lista-productos li:nth-child(2n+1){
+     clear: both;
  }
  @media (min-width: 768px){
     .lista-productos li{
         width: 33.3%;
     }
+    .lista-productos li:nth-child(2n+1){
+        clear: unset;
+    }
+    .lista-productos li:nth-child(3n+1){
+        clear: both;
+    }
  }
+ 
+ .lista-productos li img {
+    border: 10px solid rgba(128, 1, 195, .45) ;
+ }
+ .lista-productos li img:hover {
+    border: 10px solid rgba(128, 1, 195, 1) ;
+ }
+
+ .lista-productos li p {
+    font-size: 28px;
+    font-weight: bold;
+ }
+
+span.precio{
+    color: #FFCE00;
+    font-size:40px;
+}
+.boton {
+    background-color: red;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+}
+.boton:hover {
+    background-color:#FFCE00;
+}
