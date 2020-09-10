@@ -1,0 +1,30 @@
+
+:root{
+    --oscuro:#212121;
+
+}
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    font-size: 62.5%;
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+body{
+    font-family:'Montserrat', sans-serif;;
+    min-height: 100%;
+    background-image: linear-gradient(135deg, #f5f7fa 0%,#c3cfe2 100%);
+    font-size: 1.6rem;
+}
+
+.site-header nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.site-header nav a{
+    color:var(--oscuro);
+    font-size: 2.2rem;
+    text-decoration: none;
+}
