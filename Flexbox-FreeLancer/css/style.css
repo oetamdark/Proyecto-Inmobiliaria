@@ -220,6 +220,7 @@ form legend{
 }
 .campo input{
     flex: 1;
+    min-width: 65%;
     height: 4rem;
 }
 .campo textarea{
